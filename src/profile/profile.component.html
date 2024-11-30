@@ -1,0 +1,27 @@
+<div class="container">
+    <nav class="navbar">
+      <div class="nav-left">
+        <img src="logo.png" alt="Logo" class="logo"> <!-- Add a logo -->
+        <ul>
+          <li>
+            <i class="icon fa fa-home"></i>
+            <span><a routerLink="/dashboard" routerLinkActive="active">Dashboard</a></span>
+          </li>
+          <li>
+            <i class="icon fa fa-tasks"></i>
+            <span><a routerLink="/tasks" routerLinkActive="active">Tasks</a></span>
+          </li>
+          <li>
+            <i class="icon fa fa-user"></i>
+            <span><a routerLink="/profile" routerLinkActive="active">Profile</a></span>
+          </li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <button class="profile-button">My Profile</button>
+        <button class="notification-button">
+          <i class="fas fa-bell"></i>
+          <span class="badge">5</span>
+        </button>
+      </div>
+    </nav>

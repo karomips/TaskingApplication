@@ -1,49 +1,41 @@
 <div class="container">
   <nav class="navbar">
     <div class="nav-left">
-      <img src="logo.png" alt="Logo" class="logo"> <!-- Add a logo -->
-      <ul>
-        <li>
-          <i class="icon fa fa-home"></i>
-          <span><a routerLink="/dashboard" routerLinkActive="active">Dashboard</a></span>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a routerLink="/dashboard" routerLinkActive="active" class="nav-link">
+            <i class="icon fa fa-home"></i> Dashboard
+          </a>
         </li>
-        <li>
-          <i class="icon fa fa-tasks"></i>
-          <span><a routerLink="/tasks" routerLinkActive="active">Tasks</a></span>
+        <li class="nav-item">
+          <a routerLink="/tasks" routerLinkActive="active" class="nav-link">
+            <i class="icon fa fa-tasks"></i> Tasks
+          </a>
         </li>
-        <li>
-          <i class="icon fa fa-user"></i>
-          <span><a routerLink="/profile" routerLinkActive="active">Profile</a></span>
-        </li>
-        <li>
-          <i class="icon fa fa-cog"></i>
-          <span><a routerLink="/settings" routerLinkActive="active">Settings</a></span>
+        <li class="nav-item">
+          <a routerLink="/profile" routerLinkActive="active" class="nav-link">
+            <i class="icon fa fa-user"></i> Profile
+          </a>
         </li>
       </ul>
     </div>
     <div class="nav-right">
       <button class="profile-button">My Profile</button>
-      <button class="notification-button">
-        <i class="fas fa-bell"></i>
-        <span class="badge">5</span>
-      </button>
     </div>
   </nav>
 
-  <div class="main-content">
-    <h1>Welcome to Your Dashboard</h1>
-    <p>Select an option from the navigation bar to get started.</p>
-    
-    <div class="sub-container">
-      <h2>Recent Activities</h2>
-      <p>Here you can find your recent activities and updates.</p>
-      <button class="view-more-button">View More</button>
-    </div>
-    
-    <div class="sub-container">
-      <h2>Statistics Overview</h2>
-      <p>View your performance metrics and statistics here.</p>
-      <button class="view-more-button">View More</button>
+  <div class="content-container">
+    <div class="main-content">
+      <header class="header">
+        <h1>HR Tasking Dashboard</h1>
+      </header>
+
+      <div class="card sub-container">
+        <h2>Assigned Tasks</h2>
+        <div class="task-list" id="task-list">
+          <!-- Task list content -->
+        </div>
+      </div>
     </div>
   </div>
 </div>

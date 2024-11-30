@@ -1,0 +1,114 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff; /* Ensures text contrasts with the dark background */
+    background: linear-gradient(135deg, #1b1b1b, #121212);
+    animation: backgroundAnimation 10s ease-in-out infinite;
+    height: 100vh;
+    overflow-x: hidden;
+  }
+  
+  /* Background Animation */
+  @keyframes backgroundAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(36, 102, 36, 0.9); /* Dark green with transparency */
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+  .nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .nav-link:hover,
+  .nav-link.active {
+    text-decoration: underline;
+  }
+  
+  .nav-right .profile-button {
+    background-color: white;
+    color: #246624;
+    border: 2px solid #246624;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .nav-right .profile-button:hover {
+    background-color: #1b4b1b;
+    color: white;
+  }
+  
+  /* Main Content */
+  .main-content {
+    margin: 20px auto;
+    max-width: 1200px;
+    padding: 20px;
+  }
+  
+  .header h1 {
+    font-size: 32px;
+    color: #fff;
+  }
+  
+  .card {
+    background-color: rgba(255, 255, 255, 0.1); /* Subtle transparency */
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  
+  /* Task List */
+  .task-list {
+    margin-top: 10px;
+  }
+  
+  /* Scrollbar Styles */
+  body::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: #246624; /* Dark green */
+    border-radius: 5px;
+  }
+  
+  body::-webkit-scrollbar-thumb:hover {
+    background: #1b4b1b;
+  }
+  
